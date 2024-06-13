@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Letter</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .letter {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+  }
+  #letterImg {
+    width: 100px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Image and "Click on me" text -->
+<div id="imageContainer">
+  <img src="pink heart.png" alt="Letter" id="letterImg">
+  <p>Click on me</p>
+</div>
+
+<!-- Letter content -->
+<div class="letter" id="letterContent">
+  <h2>Chantel,</h2>
+  <p>
+    Ek wil net eerstens se baie dankie vir alles. Jy het so vinnig een van gunsteling mense geword en so diep in my hart in geklim. Hierdie laaste jaar was, om eerlik te wees, baie moeilik vir my. Maar ek kon elke dag wakker word en uitsien om die dag saam jou aan te vat en vertou daarop dat jy my altyd sal my glimlag en beter voel. Baie dankie daarvoor. En baie dankie vir al die liefde en ondersteuning. Die hulp en net 'n groot mamma hart wat soveel omgee. Jy is 'n wonderlike persoon, Chantel. Moet dit nooit vergeet nie. En as jy so baie vir my beteken, kan ek nie eers my indink hoe kosbaar jy vir die Here is nie. Mens kan sien dat Hy is jou hart is en dit skyn deur jou. Jou verhouding met die Here is vir my so mooi en ek bid vir alles goed en mooi verder vir jou. Jy verdien dit maal 'n duisend. Ek is baie lief vir jou en ek is altyd hier vir jou. Ek gaan jou baie mis.
+  </p>
+  <p>
+    Met Baie Liefde,<br>
+    Karla
+  </p>
+</div>
+
+<script>
+  // JavaScript to toggle the letter content visibility
+  const letterImg = document.getElementById('letterImg');
+  const letterContent = document.getElementById('letterContent');
+
+  letterImg.addEventListener('click', function() {
+    letterContent.style.display = 'block';
+    document.getElementById('imageContainer').style.display = 'none'; // Hide image container
+  });
+</script>
+
+</body>
+</html>
